@@ -1,0 +1,94 @@
+<!-- Jokaisen HTML-tiedoston pitää alkaa DOCTYPE-elementillä -->
+
+<!DOCTYPE html>
+
+<!-- HTML-elementti on HTML-dokumentin juurielementti, attribuutti lang="fi" kertoo selaimelle dokumentin olevan suomenkielinen -->
+
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!-- title vaikuttaa selaimen tagin nimeen-->
+    <title>Viikko 1</title> 
+    <link rel="icon" type="image/x-icon" href="./assets/img/viikko1-favicon.jpeg">
+    <script type="module" src="./assets/components/html-css-viewer.js"></script>
+    <style>
+      body {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        max-width: 800px
+      }
+      img {
+        display: block; 
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      p {
+        width: 100%;
+      }
+    /* kun annat kuvalle classin, voit tarkentaa sun käskyjä kaikkien samannimisten elementtien (kuten div) sijaan vain haluttuille classeille */
+      button {
+        background: radial-gradient(white,white, salmon,white, white);
+        padding: 1%
+      }
+      button:active {
+        background-color: radial-gradient(white,white, lightblue,white, white);
+        padding: 1%;
+        }
+    /* hashtagilla voi antaa id-komennon, joka on hierarkiassa korkeamalla kuin class-komento */
+      .otsikko1 {
+        background: linear-gradient(white, rgb(156, 255, 179), white);
+        padding-left: 1%;
+      }
+      .leipis {
+        background: linear-gradient(white, rgb(156, 255, 179), white);
+        padding-left: 1%;
+      }  
+      .inline-text-img {
+        display: inline;
+        width: 100px;
+      }
+      #hymio {
+        width: 50px;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="otsikko1">
+        <h1>Viikko 1</h1>
+    </div> 
+    <h2>Oppimispäiväkirja</h2>
+    <h3>HTML perusteet</h3>
+    <div class="leipis">
+        <p>
+            <b>ELIKKÄ</b> 
+            <br>
+            Tällä viikolla kävimme läpi kaikkea internetin ja koodaamisen yms perustietoja sekä kolusimme arkistoja tulevaa tehtävää varten. Tavaraa on paljon, mutta onneksi aikaisempi kokemukseni koodaamisesta ja koluamisesta hieman helpottaa kaiken sisäistämistä, joskin tulen tippumaan nopeasti kelkasta, jos en keskity kunnolla. Olen innoissani tehtävän2 Arkisto-teemasta.. Juliste-tehtävään etsin inspiraatiota mm. emigre-lehdistä, haluan todella saada aikaan hienon julisteen, joka ei välttämättä olisi täysin tunnistettavissa koodiksi, mutta toisaalta kiinnostaa kanssa eri selkeiden koodi-elementtien (kuten hakukenttä) toisto. we'll see!
+    </div>
+    <button class="nappi">
+        don't 
+    </button>
+<!-- unordered list-->
+    <ul>
+        <li class="jotai"> a
+        <li class="jotai"> aa </li>   
+        <li class="jotai"> aaa </li>
+    </ul>
+<!--kuva ja sen sourcen merkkaaminen-->
+<img class="inline-text-img" src="./assets/img/viikko5-favicon.png">
+<!-- ordered list-->
+    <ol>
+        <h3>mun lempijutut</h3>
+        <li>oolong</li>
+        <li>stuff that takes toolong</li>
+    </ol>
+<!--HUOM! kuvia upottaessa on tärkeää sisällyttää myöskin kuvatiedoston polku (missä kansiossa sijaitsee) like this:-->
+    <div>
+        <a href="https://hlotvonen.github.io/koe-koodi24/"target="_blank"><img class="inline-text-img" id="hymio" src="./assets/img/hymio.png"></a>
+    </div>
+    <nav>
+      <a href="viikko2.html"> seuraava viikko</a>
+    </nav>
+</body>
+</html>

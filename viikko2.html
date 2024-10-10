@@ -5,78 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Viikko 2</title> 
     <link rel="icon" type="image/x-icon" href="./assets/img/viikko2-favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
     <script type="module" src="./assets/components/html-css-viewer.js"></script>
-    <style>
-      body {
-        background-color: rgb(255, 255, 255);
-        width: 100%;
-        max-width: 800px
-      }
-      body{
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      img {
-        display: block; 
-        max-width: 100%;
-        margin: 0 auto;
-      }
-      p {
-        width: 100%;
-      }
-      .otsikko1 {
-        border-radius: 5rem;
-        background-image: linear-gradient(90deg, white, lightgreen, white, lightblue, white,lightgreen,white);
-        background-size: 600%, 100%;
-        padding-left: 1%;
-        animation: animateBg 10s infinite linear;
-      }
-      @keyframes animateBg {
-        0% {
-            background-position: 0 0;
-        }
-        100% {
-            background-position: 100% 0;
-        }
-      }
-      .leipis {
-        border-radius: 15rem;
-        background: radial-gradient(white, lightblue, white, white,lightgreen);
-        padding-left: 1%;
-      }  
-      .nappi {
-        background: radial-gradient(white,white, salmon,white, white);
-        padding: 1%
-      }
-      .nappi:hover {
-        background: radial-gradient(white,white, lightblue,white, white);
-        padding: 1%;
-        transition: .3s ease all;
-        transform: translateY(-5px)
-        }
-      .inline-text-img {
-        display: inline;
-        width: 100px;
-      }
-      #hymio {
-        width: 50px;
-      }
-    </style>
 </head>
 
 <body>
-    <div class="otsikko1">
+    <div class="otsikko2">
         <h1>Viikko 2</h1>
     </div> 
     <h2>Oppimispäiväkirja</h2>
     <h3>CSS-juttuja</h3>
-    <div class="leipis">
+    <div class="leipis2">
         <p>
             <br>
             En ollut kovin koulussa viimeviikolla, päänsäryn ja koulun ulkopuolisten töiden takia. Nyt tarvii vähän kerrata CSS:ää! Sain onneksi muiden oppimispäiväkirjoja selaillessa hyviä vinkkejä, ja inspector toolia käyttäessä ymmärsin hieman viime viikolla läpikäytyjä asioita. Katsoin myös pienen css-tutoriaalin. Opin tekemään sekä gradient-animaation, että muuttamaan napin väriä ja paikkaa kun kursori hoveroi sen päälle! 
             <br><br>
             Selailin torstaina kuumeisesti Internet Archivea, ja löysin vaikka mitä ideoita, mutta nyt on aika karsia. Monet mun ideoista oli aika kuvapohjasia, (kuten useat ideat katalogeista) joka lisää haastetta meidän 1Mt-haasteelle. Mutta ehkä se on hyvä asia; opinpahan optimoimaan kuvia nettiin jatkoa varten!
             <br><br>
-            Viikolla 2 mulla on onneksi reilummin aikaa keskittyä tähän kurssiin, joten koitan parhaani mukaan hieman kiriä itseäni takaisin samalle viivalle tai jopa hieman eteenpäinkin, jotta voin aaltomaisesti edetä myös kurssin ulkopuolisten töiden (kandityö, Aavistus-keikka ja vaihtohaku.. yhh) kanssa.. Onneksi koodaaminen kiinnostaa, niin on helpompi motivoitua..
+            Tällä viikolla mulla oli onneksi reilummin aikaa keskittyä tähän kurssiin, joten koitin parhaani mukaan hieman kiriä itseäni takaisin samalle viivalle tai jopa hieman eteenpäinkin, jotta voin aaltomaisesti edetä myös kurssin ulkopuolisten töiden (kandityö, Aavistus-keikka ja vaihtohaku.. yhh) kanssa.. Onneksi koodaaminen kiinnostaa, niin on helpompi motivoitua..
         </p>
         <button class="nappi">
             don't 
@@ -94,11 +40,16 @@
     <div>
         <a href="https://hlotvonen.github.io/koe-koodi24/"target="_blank"><img class="inline-text-img" id="hymio" src="./assets/img/hymio.png"></a>
     </div>
+    <div class="linkit">
     <nav>
-      <a href="viikko1.html"> viime viikko</a>
+        <a href="viikko3.html"> seuraava viikko--></a>
     </nav>
     <nav>
-        <a href="viikko3.html"> seuraava viikko</a>
-      </nav>
+        <a href="viikko1.html"> <-- viime viikko</a>
+    </nav>
+    <nav>
+      <a href="index.html">LINKKISIVUT</a>
+    </nav>
+    </div>
 </body>
 </html>

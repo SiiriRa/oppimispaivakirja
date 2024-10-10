@@ -1,0 +1,179 @@
+body {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 800px
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+img {
+    display: block; 
+    max-width: 100%;
+    margin: 0 auto;
+}
+p {
+    width: 100%;
+}
+.inline-text-img {
+    display: inline;
+    width: 100px;
+}
+
+#hymio {
+    width: 50px;
+}
+.linkit{
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.linkit nav{
+    padding: 0.5%;
+}
+
+/* VIIKKO 2*/
+
+.otsikko2 {
+border-radius: 5rem;
+    background-image: linear-gradient(90deg, white, lightgreen, white, lightblue, white,lightgreen,white);
+    background-size: 600%, 100%;
+    padding-left: 1%;
+    animation: animateBg 10s infinite linear;
+}
+@keyframes animateBg {
+0% {
+    background-position: 0 0;
+}
+100% {
+    background-position: 100% 0;
+}}
+.leipis2 {
+    border-radius: 15rem;
+    background: radial-gradient(white, lightblue, white, white,lightgreen);
+    padding-left: 1%;
+    padding-bottom: 1%;
+}  
+.nappi {
+    background: radial-gradient(white,white, salmon,white, white);
+    padding: 1%
+}
+.nappi:hover {
+    background: radial-gradient(white,white, lightblue,white, white);
+    padding: 1%;
+    transition: .3s ease all;
+    transform: translateY(-5px)
+}
+
+
+/* VIIKKO 3 */
+
+.otsikko3-2 {
+    padding-left:200px;
+    font-weight: lighter;
+    color: yellow;
+    background: repeating-linear-gradient(yellow 20%, violet 50%);
+    border-radius: 5rem;
+  }
+.otsikko3 {
+    border-radius: 5rem;
+    background-image: linear-gradient(90deg, yellow, lightyellow, lightyellow, violet, lightyellow, yellow,lightyellow);
+    background-size: 600%, 100%;
+    padding-left: 1%;
+    animation: animateBg 10s infinite linear;
+  }
+@keyframes animateBg {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+  }
+.leipis3{
+    background-color: lightyellow;
+    border: solid 1px violet;
+    border-radius: 50px;
+    padding: 10px 20px 10px 30px;
+}
+
+img{
+    border-radius: 15px;
+}
+
+/* VIIKKO 4 */
+
+.linkit4 {
+    text-align: center;
+    animation: glow 1s infinite alternate;
+    width: 100px;
+    padding: 3%;
+    padding-top:5px;
+    padding-bottom: 5%; 
+    margin-left: 40%;
+    margin-right: 50%;
+    margin-bottom: 10%;
+}
+
+.linkit4 nav{
+    padding: 3%;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px -10px #aef4af;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #aef4af;
+  }
+}
+a:link {
+    color: lightpink
+}
+a:visited {
+    color: hotpink
+    }
+a:hover {
+    background-color: #cde7ef;
+    border-radius: 50%;
+    }
+@font-face {
+    font-family: 'CirrusCumulus';
+    src: url('../assets/fonts/CirrusCumulus.ttf') format('truetype');
+    }
+.otsikko4 {
+    font-family: 'CirrusCumulus';
+    font-size: 5em;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    color: blue;
+}
+
+.otsikot{
+    margin-left:10%
+}
+
+.leipis4{
+    max-width: 600px;
+    margin-left: 10%;
+}
+
+/* viikko 5 */
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+  
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+.kuvat{
+    max-width: 50%;
+    display:flex;
+    padding-bottom: 3%;
+}
+.hymio4 {
+    margin-left:10%;
+}

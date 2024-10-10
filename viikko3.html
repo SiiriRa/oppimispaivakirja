@@ -5,100 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Viikko 3</title> 
     <link rel="icon" type="image/x-icon" href="./assets/img/viikko3-favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
     <script type="module" src="./assets/components/html-css-viewer.js"></script>
-    <style>
-      body {
-        background-color: rgb(255, 255, 255);
-        width: 100%;
-        max-width: 800px
-      }
-      body{
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      img {
-        display: block; 
-        max-width: 100%;
-        margin: 0 auto;
-      }
-      p {
-        width: 100%;
-      }
-      .otsikko1 {
-        border-radius: 5rem;
-        background-image: linear-gradient(90deg, white, lightgreen, white, lightblue, white,lightgreen,white);
-        background-size: 600%, 100%;
-        padding-left: 1%;
-        animation: animateBg 10s infinite linear;
-      }
-      @keyframes animateBg {
-        0% {
-            background-position: 0 0;
-        }
-        100% {
-            background-position: 100% 0;
-        }
-      }
-      .leipis {
-        border-radius: 15rem;
-        background: radial-gradient(white, lightblue, white, white,lightgreen);
-        padding-left: 1%;
-      }  
-      .nappi {
-        background: radial-gradient(white,white, salmon,white, white);
-        padding: 1%
-      }
-      .nappi:hover {
-        background: radial-gradient(white,white, lightblue,white, white);
-        padding: 1%;
-        transition: .3s ease all;
-        transform: translateY(-5px)
-        }
-      .inline-text-img {
-        display: inline;
-        width: 100px;
-      }
-      #hymio {
-        width: 50px;
-      }
-    </style>
 </head>
-
 <body>
-    <div class="otsikko1">
+    <div class="otsikko3">
         <h1>Viikko 3</h1>
     </div> 
     <h2>Oppimispäiväkirja</h2>
-    <h3>CSS-juttuja</h3>
-    <div class="leipis">
+    <div class="leipis3">
         <p>
             <br>
-            Tälläkin viikolla koulun ulkopuoliset tapahtumat sabotoivat osallistumistani. Tällä kertaa ikävä tapahtuma, johon en syvenny nyt sen kummemmin. Mun on kuitenkin valmistuttava, eli kurssin käyn läpi vaikka hampaat irveessä!
+            Tälläkin viikolla koulun ulkopuoliset tapahtumat sabotoivat osallistumistani. Mun on kuitenkin valmistuttava, eli kurssin käyn läpi vaikka hampaat irveessä! Onneksi olen aiheesta todella kiinnostunut; tää 2 tehtävän aihepiirikin on lähes huvittavasti ihan täysin mun kiinnostukseni piirissä.
             <br><br>
             Hioin tehtävä 2-ideaa pidemmälle: Teen nettisivun, joka on omistettu oudoille paperiroskille, joita olen löytänyt Internet Archivesta. Työnimi "One Man's Trash", jonka avulla käsittelen omaa mielenkiintoani löytämiini näennäisen turhiin paperilappusiin, jonka joku on kuitenkin päättänyt dokumentoida muiden näkemäksi. Katsoessani hajamielisiä to-do-listoja ja vanhoja kuitteja mieleeni kehittyy tarinoita tuntemattomista elämistä. 
-             <br><br>
-             Olen saanut kerättyä kunnioitettavan määrän materiaalia, joten voin siirtyä esittelyvaiheeseen ja koodaamiseen. Layout tulee olemaan suhteellisen selvä, joskin luultavasti hankalampi koodata, kuin kuvittelen. Simplified: sivulla on paperimyttyjä, joita klikkaamalla aukeaa pieni pop-up, jossa näkyy kuva "teoksesta" ja infoteksi roskan alkuperästä ja vuodesta yms. 
+            <br><br>
+            Olen saanut kerättyä kunnioitettavan määrän materiaalia, joten voin siirtyä esittelyvaiheeseen ja koodaamiseen. Layout tulee olemaan suhteellisen selvä, joskin luultavasti hankalampi koodata, kuin kuvittelen. Simplified: sivulla on paperimyttyjä, joita klikkaamalla aukeaa pieni pop-up, jossa näkyy kuva "teoksesta" ja infotekstiksi roskan alkuperästä ja vuodesta yms. 
+            <br><br>
+            Tällä viikolla kävimme läpi myös gridiä ja flexboxia, mitkä, <em>tälläkin kertaa</em> (<-- huom tuossa on em-tägi käytössä) olivat hankalia ymmärtää. Niitä tarvitsee vain lähteä harjoittelemaan sit kun on vähän vapaa-aikaa.. HAHA 
+            <br><br>
+            Keksin laittaa jokaiselle viikolle omat "numeromäärälliset" marimo-pallura-kuvat faviconeiksi, kun mulla on niin monta täbiä auki samanaikaisesti et nää sivut hukkuu tonne. Aika hauska ominaisuus toi favicon.
         </p>
-        <button class="nappi">
-            don't 
-        </button>
     </div>
-    <h2> TEHTÄVÄ 2 ideoita:</h2>
+    <h3 class="otsikko3-2">repeating-gradientti -kokeilu</h3>
+    <img src="./assets/img/suunnitelma.png"> 
+    <h2 class="otsikko3">TEHTÄVÄ 2 - tärppejä:</h2>
     <ul>
-        <li class="jotai"> <b></b>Catalogs: <b>seed-catalogue</b>, window-, house-, Marple's Tools-, Radiator-Catalogue </li>
-        <li class="jotai"> a petridish </li>
-        <li class="jotai"> unohdettujen paperilappusten esittely/withered unreadable papers (in a folder?) / top secret-files </li>   
-        <li class="jotai"> Hakukenttätarina? Like the options would tell a story.. </li>
-        <li class="jotai"> Imaginary Family album </li>
-        <li class="jotai"> Roadsign-walk? </li>
+        <li class="jotai"> dialog-toiminto, jonka avulla saisin paperimytystä aukeamaan pop-upin</li>
+        <li class="jotai"> hmtl:ssä tämän --> style="--x:60%;--y:40%;" asetttaminen paperimytty-diville ja myöhemmin css:ä määritellessä position:absolute;
+          top:var(--y);
+          left:var(--x); voisi esimerkiksi olla tapa saada mytyt "näytölle levinneiksi"</li>
+        <li class="jotai"> chat gpt:n korkkaaminen koodityökaluna... Heikki näytti hieman, millä tyylillä kannattaa lähteä viestimään, jotta saa tahtomansa perille..</li>   
     </ul>
     <div>
         <a href="https://hlotvonen.github.io/koe-koodi24/"target="_blank"><img class="inline-text-img" id="hymio" src="./assets/img/hymio.png" alt="hymynaama, klikkaa!"></a>
     </div>
+    <div class="linkit">
     <nav>
-      <a href="viikko2.html"> viime viikko</a>
+        <a href="viikko4.html">seuraava viikko --></a>
     </nav>
     <nav>
-        <a href="viikko4.html"> seuraava viikko</a>
-      </nav>
+      <a href="viikko2.html"><-- viime viikko</a>
+    </nav>
+    <nav>
+      <a href="index.html"target="_blank">LINKKISIVUT</a>
+    </nav>
+    </div>
 </body>
 </html>

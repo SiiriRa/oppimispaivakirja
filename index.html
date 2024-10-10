@@ -2,21 +2,114 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="widht=device-widht, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0"> 
     <title>kaikki linkit</title> 
     <script type="module" src="./assets/components/html-css-viewer.js"></script>
     <style>
-.inline-text-img {
-        display: inline;
-        width: 100px;
-      }
-      #mytty {
-        width: 50px;
-      }
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .body{
+            width: 100%;
+            height: 100%;
+        }
+       /* @keyframes glow {
+            from {
+                box-shadow: 0 0 10px -10px hotpink;
+            }
+            to {
+                 box-shadow: 0 0 10px 10px lavender;
+            }
+ 
+        }*/
+        h1{
+            font-size: 16vh;
+            padding-left:10%;
+            line-height: 0.9em;
+            text-align: left;
+        }
+        header {
+            margin-top: 5vh;
+            margin-bottom: 7vh;
+            width: 100%;
+            height: auto;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background: no-repeat center center linear-gradient(transparent,beige,ivory,whitesmoke,snow, honeydew, seashell, white,ghostwhite, transparent);
+            animation: glow 1s infinite alternate;
+            filter: blur(100%)
+        }
+        nav{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        nav a img{
+            max-height: 20vh;
+            min-width: 100%;
+            height: auto;
+            width: auto;
+        }
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style-type: none;
+            padding-left: 15%;
+            padding-right: 15%;
+            margin-bottom: 5vh;
+        }
+        li{
+            flex-grow: 1;
+            text-align: center;
+        }
+        a:link {
+            color: black;
+        }
+        a:visited {
+            color: black;
+            }
+        ul a:hover {
+            background-color: blue;
+            padding: 2%;
+            border-radius: 50%;
+            filter: blur(10px);
+            }
+      header nav a:hover {
+            filter: blur(8px);
+            transition: filter 0.3s ease;
+        }
     </style>
 </head>
 
 <body>
+    <h1>have some links:</h1>
+    <header>  
+        <nav>
+            <a href="https://siirira.github.io/webtrash/index.html"target="_blank">
+            <img class="inline-text-img" id="mytty" src="./assets/img/mytty7.png">
+            </a>
+        </nav>
+        <nav>
+            <a href="https://siirira.github.io/juliste/"target="_blank">
+            <img class="inline-text-img" id="juliste" src="./assets/img/juliste.png">
+            </a>
+        </nav>
+        <nav>
+            <a href="https://hlotvonen.github.io/koe-koodi24/"target="_blank">
+            <img class="inline-text-img" id="hymio" src="./assets/img/hymio.png">
+            </a>
+        </nav>
+    </header>
     <ul>
         <li>
             <a href="viikko1.html">Viikko 1</a>
@@ -36,14 +129,6 @@
         <li>
             <a href="viikko6.html">Viikko 6</a>
         </li>
-        <li>
-            <a href="juliste.html">Viikko 6</a>
-        </li>
-    </ul>
-        
-    <!-- <a href="trash.html"target="_blank">  tää käyttöön sitten kun oot kompressoinu trash.html kuvat..-->
-        <img class="inline-text-img" id="mytty" src="./assets/img/mytty4.png" alt="paperimytty, klikkaa!">
-    </a>
-    
+    </ul>  
 </body>
 </html>

@@ -1,0 +1,160 @@
+mua on alkanut kiinnostamaan tää koodin herkkyys.. jollakin tapaa nään sen konseptitasolla tosi hauskana, että miten pienistäkin puutoksista ( kuten jumankauta tää -> ; tai kun kirjotan jatkuvasti widht tälleen -> wiHDt). tykkään mun praktiikassa tarkoituksella ulkoistaa joitakin päätöksiä glitchailun yms sekoilun sattumanvaraisuudelle, ja tää on ehdottomasti sillä saralla herkullinen työkalu. paitsi jos oikeasti aikoo työskennellä ko. koodin kanssa pitkään... Mut niinku tääkin on nyt vaa kaiken ulkopuolella tää teksti LOL
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gridi esimerkki 2</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="./js/viikko6.js"></script>
+  <style>
+        html, body {
+        height:100%;
+        margin:0;
+        font-size:30px;
+        }
+        .header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: repeating-radial-gradient(whitesmoke, yellow,  whitesmoke 10%);
+            padding:5px 0;
+            height: 20vh;
+        }
+        .header nav {
+           flex:1;
+           text-align:center; 
+           padding: 0 10;
+        }
+        .header img {
+            max-width: 10vw;
+            transition: transform 0.3s ease;
+        }
+
+        .header img:hover {
+            transform: scale(1.1);
+           /* tänkin voi lisätä mut oli vähän too much filter:blur(10px);*/
+        }
+
+        .frame {
+            height:100%;
+            display:grid;
+            grid-template-columns:100px 1fr 100px;
+            grid-template-rows:50px 1fr 70px;  
+        }
+        .frame div {
+            background:url(./assets/img/hymio.png) center fixed;
+        }
+        .frame div.center {
+            overflow:auto;
+            background:white;
+            padding:20px;
+            line-height:1.3;
+            color: black;
+            border: dotted rgb(216, 216, 216) 10px;
+        }
+        a:link {
+            color: blue;
+        }
+        a:visited {
+            color: blue;
+            }
+        p a:hover {
+            background-color: blue;
+            border-radius: 50%;
+            filter: blur(10px);
+            }
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 100px -100px hotpink;
+            }
+            to {
+                 box-shadow: 0 0 100px 100px lavender;
+            }
+        }
+        @font-face {
+            font-family: 'CirrusCumulus';
+            src: url('../assets/fonts/CirrusCumulus.ttf') format('truetype');
+            }
+        .blink_me{
+            width: auto;
+            border-radius: 50%;
+            animation: glow 1s infinite alternate;
+        }
+        /*
+         ei näyttäny hirveen hyvältä
+
+        ::-webkit-scrollbar {
+            width: 5px;
+         }
+   
+  
+        ::-webkit-scrollbar-track {
+            border: solid 5px whitesmoke;
+            border-radius: 10px;
+        } 
+
+        ::-webkit-scrollbar-thumb {
+            background: repeating-linear-gradient(#F5F5F5,#fa72d1,#F5F5F5); 
+            border-radius: 10px;
+            height: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: repeating-linear-gradient(#F5F5F5, palegreen,#F5F5F5);
+            } */
+            
+        
+        .otsikko{
+            display: flex;
+            
+        }
+        
+  </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="https://hlotvonen.github.io/koe-koodi24/"target="_blank"><img class="blink_me" id="hymio6" src="./assets/img/hymio.png"></a>
+        </nav>
+        <nav>
+            <a href="https://siirira.github.io/juliste/"target="_blank"><img class="blink_e" id="juliste" src="./assets/img/juliste.png"></a>
+        </nav>
+        <nav>
+            <a href="https://siirira.github.io/webtrash/index.html"><img class="blink_e" src="assets/img/viikko1-favicon.png"></a>
+        </nav>
+        <nav>
+            <a href="https://siirira.github.io/webtrash/index.html"><img class="blink_e" id="mytty" src="./assets/img/mytty7.png"></a>
+        </nav>
+    </div>
+    <div class="frame">
+        <div class="topleft corner"></div>
+        <div class="top"></div>
+        <div class="topright corner"></div>
+        <div class="left"></div>
+        <div class="center">
+            <p class="otsikko">VIIMEINEN VIIKKO</p>
+            <p>
+                Nyt on pistetty ns. ranttaliksi. Tällä viikolla viimein sain julisteen, oppimispäiväkirjan ja arkisto-sivun kaikki valmiiksi. Paljoo ei oo tullut nukuttua, sen myönnän! Oon silti iloinen, että oon jaksanut tehdä nää tehävät kunnolla, on ihan supertyydyttävää, kun tekemät sivut näyttää hyvältä ja myös <em>toimii</em> hyvin.  
+            </p>
+            <p>
+                Julisteen tekeminen tyhjästä hirvitti alkuun aika paljon, sillä olin hoitanut arkisto-sivun kuvituspuolen oikeastaan täysin png-kuvilla. En siis lasikotellakseni, vaan esteettisistä syistä. Ja nyt ei enää saanut käyttää kuvia!! Päädyin sitten lopulta vain kokeilemaan, ja innostuin pienestä <a href="https://css-tip.com/infinite-borders/">koodinpätkästä</a>, joka koitui miltei kohtalokseni.. 
+            <p>
+                Päästin jossakin vaiheessa täysin menemään kaikista oppimistani hyvän koodin säännöistä, ja annoin vain mennä. Vaihtelin antamieni tyylien paikkaa, siirtelin asioita laittomasti minne huvitti, enkä <em>todellakaan</em> pitänyt kirjaa siitä, mitä koodin sisällä kokonaisuudessaan tapahtuu. Otin vastaan kaikki uudet käännökset ja suunnat, kunnes lopputulos alkoi viimein miellyttämään silmääni. Hioin tyyliyksityiskohtia for what felt like ages! Guess what happened next haha!
+            </p>
+            </p>
+            <p>
+                Oppimispäiväkirjaan jätin tarkoituksella slkuviikkoihin rosoisuutta, joka vikkosivujen edetessä hieman hioutuu pois.
+            </p>
+            
+                Vaikka koodi-opettelu olikin minulle ensin kertausta ja sitten aikalailla itsenäisesti opiskelua, en olisi todellakaan tässä pisteessä kooditaidoissani ilman tätä kurssia! Hell yeah! 
+            
+        </div>
+        <div class="right"></div>
+        
+        <div class="bottomleft corner"></div>
+        <div class="bottom"></div>
+        <div class="bottomright corner"></div>
+    </div>
+
+</body>
+</html>
